@@ -2,7 +2,11 @@ from kauppa import Kauppa
 from kirjanpito import Kirjanpito
 
 
+
+
 def main():
+
+    kirjanpito = Kirjanpito()
     kauppa = Kauppa()
 
     # kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
@@ -22,7 +26,7 @@ def main():
     kauppa.tilimaksu("Arto Vihavainen", "3425-1652")
 
     # kirjanpito
-    for tapahtuma in Kirjanpito.get_instance().tapahtumat:
+    for tapahtuma in kirjanpito.tapahtumat:
         print(tapahtuma)
 
 
