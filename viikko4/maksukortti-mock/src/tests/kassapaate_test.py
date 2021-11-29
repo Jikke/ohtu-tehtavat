@@ -3,6 +3,7 @@ from unittest.mock import Mock, ANY
 from kassapaate import Kassapaate, HINTA
 from maksukortti import Maksukortti
 
+# Kommentti tagi tehtavaa varten!
 
 class TestKassapaate(unittest.TestCase):
     def setUp(self):
