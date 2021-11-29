@@ -25,7 +25,7 @@ class Ostoskori:
     def lisaa_tuote(self, lisattava: Tuote):
         ostos = Ostos(lisattava)
         nimi = ostos.tuotteen_nimi()
-        if ostos in self._ostokset.values():
+        if nimi in self._ostokset.keys():
             maara = ostos.lukumaara()
             self._ostokset[nimi].muuta_lukumaaraa(maara)
         else:
