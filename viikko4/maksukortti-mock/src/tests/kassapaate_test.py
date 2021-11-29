@@ -4,6 +4,7 @@ from kassapaate import Kassapaate, HINTA
 from maksukortti import Maksukortti
 
 # Kommentti tagi tehtavaa varten!
+# Toka kommentti tagi tehtavaa varten!
 
 class TestKassapaate(unittest.TestCase):
     def setUp(self):
