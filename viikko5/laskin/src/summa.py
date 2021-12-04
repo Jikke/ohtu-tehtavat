@@ -5,3 +5,5 @@ class Summa:
 
     def suorita(self):
         self._sovelluslogiikka.plus(int(self._lue_syote()))
+
+    
